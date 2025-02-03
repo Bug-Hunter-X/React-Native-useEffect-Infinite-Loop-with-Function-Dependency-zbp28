@@ -1,0 +1,1 @@
+This error occurs when using the `useEffect` hook in React Native with a dependency array that includes a function.  The function is recreated on every render, causing an infinite loop.  Specifically, if the function's behavior depends on the component's state or props, it will change on every render, triggering the `useEffect` to run again. This creates a cycle that never ends.
